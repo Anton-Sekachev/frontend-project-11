@@ -4,4 +4,4 @@
 
 ### The project deployment:
 
-https://rss-aggregator-11.vercel.app
+https://vercel.com/anton-ss-projects-eb54deb6/frontend-project-11
