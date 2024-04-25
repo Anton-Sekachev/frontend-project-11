@@ -4,4 +4,4 @@
 
 ### The project deployment:
 
-https://vercel.com/anton-ss-projects-eb54deb6/frontend-project-11
+https://frontend-project-11-anton-ss-projects-eb54deb6.vercel.app/
