@@ -5,4 +5,4 @@
 
 ### The project deployment:
 
-https://frontend-project-11-anton-ss-projects-eb54deb6.vercel.app/
+https://https://frontend-project-11-ashy-three.vercel.app//
