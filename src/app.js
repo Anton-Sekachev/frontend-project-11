@@ -4,24 +4,30 @@ import resources from './locales/index';
 import getContent from './rss';
 import watch from './watcher';
 
-const initState = {
-  form: {
-    valid: true,
-    errorText: '',
-  },
-  loadingProcess: {
-    status: 'idle',
-    errorText: '',
-  },
-  rss: {
-    feeds: [],
-    posts: [],
-  },
-  uiState: {
-    modalPostId: null,
-    visitedPostsIds: new Set(),
-  },
-};
+const rssUpdateInterval = 5000;
+
+function createInitialState() {
+  return {
+    form: {
+      valid: true,
+      errorText: '',
+    },
+    loadingProcess: {
+      status: 'idle',
+      errorText: '',
+    },
+    rss: {
+      feeds: [],
+      posts: [],
+    },
+    uiState: {
+      modalPostId: null,
+      visitedPostsIds: new Set(),
+    },
+  };
+}
+
+const initState = createInitialState();
 
 const elements = {
   form: document.querySelector('form'),
@@ -76,7 +82,7 @@ const updateRss = (time) => {
 };
 
 export default () => {
-  updateRss(5000);
+  updateRss(rssUpdateInterval);
 
   i18n
     .init({
